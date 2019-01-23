@@ -17,33 +17,15 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for dubbo-provider-api" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dubbo-provider-api" />
-      </profile>
-      <profile default="false" name="Annotation profile for dubbo-provider-impl" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dubbo-provider-impl" />
-      </profile>
-      <profile default="false" name="Annotation profile for dubbo-provider-web" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dubbo-provider-web" />
-      </profile>
-      <profile default="false" name="Annotation profile for dubbo-consumer" enabled="true">
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="dubbo-consumer" />
+        <module name="dubbo-provider-api" />
+        <module name="dubbo-provider-impl" />
+        <module name="dubbo-provider-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
